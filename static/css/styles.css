@@ -1,0 +1,74 @@
+/* Custom styling for the HTML to PDF converter */
+
+/* Ensures iframe takes up full height in preview card */
+#preview-frame {
+    min-height: 400px; 
+}
+
+/* Style for the preview pane when empty */
+#empty-state {
+    background-color: var(--bs-dark);
+    border-radius: 0.25rem;
+}
+
+/* Override button spacing */
+.card-footer .btn {
+    min-width: 120px;
+}
+
+/* Make the HTML input textarea mono-spaced for code editing */
+#html-input {
+    font-family: monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Custom styles for the loading spinner */
+.spinner-border {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border-width: 0.25em;
+}
+
+/* Enhance the logo preview area */
+#logo-preview {
+    padding: 10px;
+    border-radius: 0.25rem;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Enhance readability of dropdown items */
+.dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-item .template-description {
+    font-size: 0.8rem;
+    color: var(--bs-secondary);
+    margin-left: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    #preview-frame {
+        min-height: 300px;
+    }
+}
+
+/* Focus styles for better accessibility */
+.form-control:focus, 
+.btn:focus {
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+/* Toast positioning */
+.toast {
+    min-width: 280px;
+}
